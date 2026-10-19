@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: pint-index
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/pintindex}
+    username: ${DB_USERNAME:pintindex}
+    password: ${DB_PASSWORD:pintindex}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
